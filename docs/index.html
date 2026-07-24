@@ -109,6 +109,27 @@
   a.mail:hover{border-color:var(--teal);}
   a.mail:focus-visible{outline:2px solid var(--teal);outline-offset:2px;border-radius:2px;}
 
+  /* Buy Me a Coffee */
+  .st-coffee{
+    display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+    background:var(--promise-bg);border:1px solid var(--promise-line);
+    border-radius:14px;padding:20px 22px;margin:0 0 8px;
+  }
+  .st-coffee .copy{flex:1 1 240px;}
+  .st-coffee .copy strong{display:block;font-size:1.05rem;font-weight:700;letter-spacing:-.01em;}
+  .st-coffee .copy em{display:block;font-style:normal;color:var(--muted);font-size:.95rem;margin-top:3px;}
+  a.st-coffee-btn{
+    display:inline-flex;align-items:center;gap:9px;flex:0 0 auto;
+    font-size:.95rem;font-weight:700;letter-spacing:.01em;text-decoration:none;
+    color:#3A2A12;background:var(--amber);
+    padding:11px 18px;border-radius:999px;
+    box-shadow:0 1px 2px rgba(18,51,58,.12);
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  a.st-coffee-btn:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(244,176,42,.4);}
+  a.st-coffee-btn:focus-visible{outline:2px solid var(--teal);outline-offset:2px;}
+  a.st-coffee-btn svg{width:18px;height:18px;display:block;}
+
   .st-foot{border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:.88rem;
     display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between;}
 </style>
@@ -136,6 +157,7 @@
     <nav class="st-nav" aria-label="Sections">
       <a href="#privacy">Privacy Policy</a>
       <a href="#support">Support</a>
+      <a href="#coffee">Buy Me a Coffee</a>
     </nav>
 
     <div class="st-promise">
@@ -179,6 +201,26 @@
 
       <h3>Questions or feedback</h3>
       <p>Email <a class="mail" href="mailto:SkillTrack101@gmail.com">SkillTrack101@gmail.com</a> and we'll be glad to help.</p>
+    </section>
+
+    <section id="coffee">
+      <p class="eyebrow">Support development</p>
+      <h2>Buy Me a Coffee</h2>
+      <p>SkillTrack is built and maintained by one person, with no ads, no accounts, and no data collection. If it helps you in your clinical practice, a small tip keeps it growing — entirely optional, and always appreciated.</p>
+      <div class="st-coffee">
+        <span class="copy">
+          <strong>Enjoying SkillTrack?</strong>
+          <em>A coffee helps fund future updates.</em>
+        </span>
+        <a class="st-coffee-btn" href="https://buymeacoffee.com/DougWiebe" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 8h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M17 9h2.5a2.5 2.5 0 0 1 0 5H17" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M8 2.5c-.6.8-.6 1.7 0 2.5M11.5 2.5c-.6.8-.6 1.7 0 2.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          Buy Me a Coffee
+        </a>
+      </div>
     </section>
 
     <footer class="st-foot">
