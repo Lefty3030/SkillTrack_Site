@@ -135,6 +135,20 @@
   a.st-coffee-btn:focus-visible{outline:2px solid var(--teal);outline-offset:2px;}
   a.st-coffee-btn svg{width:18px;height:18px;display:block;}
 
+  /* Product Walkthrough callout */
+  .st-walk{margin:0 0 38px;}
+  a.st-walk-btn{
+    display:inline-flex;align-items:center;gap:9px;flex:0 0 auto;
+    font-size:.95rem;font-weight:700;letter-spacing:.01em;text-decoration:none;
+    color:#fff;background:linear-gradient(90deg,var(--indigo),var(--teal));
+    padding:11px 18px;border-radius:999px;
+    box-shadow:0 1px 2px rgba(18,51,58,.12);
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  a.st-walk-btn:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(52,87,177,.35);}
+  a.st-walk-btn:focus-visible{outline:2px solid var(--teal);outline-offset:2px;}
+  a.st-walk-btn svg{width:18px;height:18px;display:block;}
+
   .st-foot{border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:.88rem;
     display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between;}
 </style>
@@ -175,6 +189,20 @@
         <strong>No account. No cloud. Nothing leaves your device.</strong>
         <em>Your clinical education record stays on your phone - always.</em>
       </span>
+    </div>
+
+    <div class="st-coffee st-walk">
+      <span class="copy">
+        <strong>New to SkillTrack?</strong>
+        <em>Take the visual walkthrough of every student &amp; instructor feature.</em>
+      </span>
+      <a class="st-walk-btn" href="https://skilltrack-deck.vercel.app" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M10 8.4l6 3.6-6 3.6V8.4Z" fill="currentColor"/>
+        </svg>
+        Product Walkthrough
+      </a>
     </div>
 
     <section id="privacy">
